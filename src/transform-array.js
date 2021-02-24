@@ -1,6 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function transform(/* arr */) {
+module.exports = function transform(arr) {
   const action =['--discard-next','--discard-prev','--double-next','--double-prev'];
   let arrNew=[];
   if(!Array.isArray(arr)){throw "Error";}
